@@ -14,6 +14,11 @@
 		565FAB881E70087600BD678F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565FAB871E70087600BD678F /* Assets.xcassets */; };
 		565FAB8B1E70087600BD678F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565FAB891E70087600BD678F /* LaunchScreen.storyboard */; };
 		565FAB931E7008EE00BD678F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 565FAB921E7008EE00BD678F /* GoogleService-Info.plist */; };
+		565FAB981E7016DE00BD678F /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB971E7016DE00BD678F /* FancyView.swift */; };
+		565FAB9B1E70177A00BD678F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB9A1E70177A00BD678F /* Constants.swift */; };
+		565FAB9D1E70407C00BD678F /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB9C1E70407C00BD678F /* RoundBtn.swift */; };
+		565FAB9F1E70420000BD678F /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB9E1E70420000BD678F /* FancyField.swift */; };
+		565FABA11E70434000BD678F /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FABA01E70434000BD678F /* FancyBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		565FAB8A1E70087600BD678F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		565FAB8C1E70087600BD678F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		565FAB921E7008EE00BD678F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		565FAB971E7016DE00BD678F /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		565FAB9A1E70177A00BD678F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		565FAB9C1E70407C00BD678F /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		565FAB9E1E70420000BD678F /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		565FABA01E70434000BD678F /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		5F6836EA4235AC3C8916F23D /* Pods-TryInstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryInstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-TryInstagram/Pods-TryInstagram.release.xcconfig"; sourceTree = "<group>"; };
 		9B0B809035527AC2247543E9 /* Pods_TryInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +73,7 @@
 		565FAB7F1E70087600BD678F /* TryInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				565FAB991E70176600BD678F /* Util */,
 				565FAB941E700A2600BD678F /* Model */,
 				565FAB951E700A3100BD678F /* View */,
 				565FAB961E700A3800BD678F /* Controller */,
@@ -86,6 +97,10 @@
 		565FAB951E700A3100BD678F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				565FAB971E7016DE00BD678F /* FancyView.swift */,
+				565FAB9C1E70407C00BD678F /* RoundBtn.swift */,
+				565FAB9E1E70420000BD678F /* FancyField.swift */,
+				565FABA01E70434000BD678F /* FancyBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -96,6 +111,14 @@
 				565FAB821E70087600BD678F /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		565FAB991E70176600BD678F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				565FAB9A1E70177A00BD678F /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		77CD70A68499C873B30060DA /* Frameworks */ = {
@@ -239,8 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				565FAB9F1E70420000BD678F /* FancyField.swift in Sources */,
 				565FAB831E70087600BD678F /* SignInVC.swift in Sources */,
+				565FAB9D1E70407C00BD678F /* RoundBtn.swift in Sources */,
 				565FAB811E70087600BD678F /* AppDelegate.swift in Sources */,
+				565FAB981E7016DE00BD678F /* FancyView.swift in Sources */,
+				565FAB9B1E70177A00BD678F /* Constants.swift in Sources */,
+				565FABA11E70434000BD678F /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
