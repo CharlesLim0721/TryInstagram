@@ -1,15 +1,15 @@
 //
-//  FancyView.swift
+//  CicleView.swift
 //  TryInstagram
 //
-//  Created by Charles Lim on 3/8/17.
+//  Created by Charles Lim on 3/9/17.
 //  Copyright © 2017 RegaCity. All rights reserved.
 //
 
 import UIKit
 
-class FancyView: UIView {
-
+class CicleView: UIImageView {
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -17,8 +17,16 @@ class FancyView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
-        
+
     }
+
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        layer.cornerRadius = self.frame.width / 2
+    }
+        
+    
+    
 
 }
