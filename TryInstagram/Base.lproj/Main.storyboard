@@ -112,11 +112,48 @@
                     <connections>
                         <outlet property="emailField" destination="J7q-Tm-fBg" id="Pvg-33-0S5"/>
                         <outlet property="pwdField" destination="cNL-in-PfM" id="S3e-Sg-vZa"/>
+                        <segue destination="Wdo-of-GJw" kind="show" identifier="gotoFeed" id="7vV-qB-81u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="68.815592203898049"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="h4g-2y-sO6">
+            <objects>
+                <viewController id="Wdo-of-GJw" customClass="FeedVC" customModule="TryInstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HWi-Lb-yW4"/>
+                        <viewControllerLayoutGuide type="bottom" id="gxx-es-pWK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gLJ-jK-L4M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHE-g8-dVI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="Jzh-b3-blS"/>
+                                    <constraint firstAttribute="height" constant="30" id="Yqn-73-64P"/>
+                                </constraints>
+                                <state key="normal" title="Signout">
+                                    <color key="titleColor" red="0.99195677042007446" green="0.99622899293899536" blue="0.99192315340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOut:" destination="Wdo-of-GJw" eventType="touchUpInside" id="ahR-wV-bzh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13962877516778524" green="0.35444630872483224" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VHE-g8-dVI" firstAttribute="centerX" secondItem="gLJ-jK-L4M" secondAttribute="centerX" id="tV2-oT-j3S"/>
+                            <constraint firstItem="VHE-g8-dVI" firstAttribute="centerY" secondItem="gLJ-jK-L4M" secondAttribute="centerY" id="wmL-jE-1Hh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjo-6u-8I8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813.60000000000002" y="68.815592203898049"/>
         </scene>
     </scenes>
     <resources>

@@ -19,6 +19,7 @@
 		565FAB9D1E70407C00BD678F /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB9C1E70407C00BD678F /* RoundBtn.swift */; };
 		565FAB9F1E70420000BD678F /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB9E1E70420000BD678F /* FancyField.swift */; };
 		565FABA11E70434000BD678F /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FABA01E70434000BD678F /* FancyBtn.swift */; };
+		56ECE1B11E712C7E007BF0B2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ECE1B01E712C7E007BF0B2 /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		565FAB9C1E70407C00BD678F /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		565FAB9E1E70420000BD678F /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		565FABA01E70434000BD678F /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		56ECE1B01E712C7E007BF0B2 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		56ECE1B21E713013007BF0B2 /* TryInstagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TryInstagram.entitlements; sourceTree = "<group>"; };
 		5F6836EA4235AC3C8916F23D /* Pods-TryInstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryInstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-TryInstagram/Pods-TryInstagram.release.xcconfig"; sourceTree = "<group>"; };
 		9B0B809035527AC2247543E9 /* Pods_TryInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +76,7 @@
 		565FAB7F1E70087600BD678F /* TryInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				56ECE1B21E713013007BF0B2 /* TryInstagram.entitlements */,
 				565FAB991E70176600BD678F /* Util */,
 				565FAB941E700A2600BD678F /* Model */,
 				565FAB951E700A3100BD678F /* View */,
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				565FAB821E70087600BD678F /* SignInVC.swift */,
+				56ECE1B01E712C7E007BF0B2 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -173,7 +178,13 @@
 				TargetAttributes = {
 					565FAB7C1E70087600BD678F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J3Q99QV6GU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -266,6 +277,7 @@
 				565FAB831E70087600BD678F /* SignInVC.swift in Sources */,
 				565FAB9D1E70407C00BD678F /* RoundBtn.swift in Sources */,
 				565FAB811E70087600BD678F /* AppDelegate.swift in Sources */,
+				56ECE1B11E712C7E007BF0B2 /* FeedVC.swift in Sources */,
 				565FAB981E7016DE00BD678F /* FancyView.swift in Sources */,
 				565FAB9B1E70177A00BD678F /* Constants.swift in Sources */,
 				565FABA11E70434000BD678F /* FancyBtn.swift in Sources */,
@@ -392,6 +404,8 @@
 			baseConfigurationReference = 4498A122A18E819042C4BC88 /* Pods-TryInstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TryInstagram/TryInstagram.entitlements;
+				DEVELOPMENT_TEAM = J3Q99QV6GU;
 				INFOPLIST_FILE = TryInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RegaCity.TryInstagram;
@@ -405,6 +419,8 @@
 			baseConfigurationReference = 5F6836EA4235AC3C8916F23D /* Pods-TryInstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TryInstagram/TryInstagram.entitlements;
+				DEVELOPMENT_TEAM = J3Q99QV6GU;
 				INFOPLIST_FILE = TryInstagram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RegaCity.TryInstagram;
