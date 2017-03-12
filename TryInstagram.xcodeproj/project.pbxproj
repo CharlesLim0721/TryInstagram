@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27B7636130BF726181160745 /* Pods_TryInstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B0B809035527AC2247543E9 /* Pods_TryInstagram.framework */; };
+		560685E01E759C7D003571BE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560685DF1E759C7D003571BE /* Post.swift */; };
 		565FAB811E70087600BD678F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB801E70087600BD678F /* AppDelegate.swift */; };
 		565FAB831E70087600BD678F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB821E70087600BD678F /* SignInVC.swift */; };
 		565FAB861E70087600BD678F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565FAB841E70087600BD678F /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		4498A122A18E819042C4BC88 /* Pods-TryInstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryInstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TryInstagram/Pods-TryInstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		560685DF1E759C7D003571BE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		565FAB7D1E70087600BD678F /* TryInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565FAB801E70087600BD678F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		565FAB821E70087600BD678F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		565FAB941E700A2600BD678F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				560685DF1E759C7D003571BE /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				565FAB9F1E70420000BD678F /* FancyField.swift in Sources */,
 				565FAB831E70087600BD678F /* SignInVC.swift in Sources */,
 				565FAB9D1E70407C00BD678F /* RoundBtn.swift in Sources */,
+				560685E01E759C7D003571BE /* Post.swift in Sources */,
 				565FAB811E70087600BD678F /* AppDelegate.swift in Sources */,
 				56ECE1B11E712C7E007BF0B2 /* FeedVC.swift in Sources */,
 				569EF1D71E726BB7007DACB0 /* DataService.swift in Sources */,
