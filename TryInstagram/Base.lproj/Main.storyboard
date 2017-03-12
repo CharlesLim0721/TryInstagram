@@ -202,19 +202,19 @@
                                     <constraint firstItem="LTU-9y-ZVZ" firstAttribute="leading" secondItem="ni7-AU-RDE" secondAttribute="leading" constant="8" id="ztZ-n7-T1A"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="406" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MdW-51-TJp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="406" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MdW-51-TJp">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="406" id="94A-2y-2e1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="406" id="94A-2y-2e1" customClass="PostCell" customModule="TryInstagram" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="406"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="94A-2y-2e1" id="rp9-3U-Toh">
-                                            <frame key="frameInset" width="375" height="405"/>
+                                            <frame key="frameInset" width="375" height="406"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMO-eH-9yW" customClass="FancyView" customModule="TryInstagram" customModuleProvider="target">
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-2E-D5Y" customClass="CicleView" customModule="TryInstagram" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-2E-D5Y" customClass="CicleView" customModule="TryInstagram" customModuleProvider="target">
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="65" id="Gpy-DF-Fqb"/>
                                                                 <constraint firstAttribute="width" constant="65" id="JuK-zy-wms"/>
@@ -276,13 +276,20 @@
                                                 <constraint firstItem="vMO-eH-9yW" firstAttribute="top" secondItem="rp9-3U-Toh" secondAttribute="topMargin" id="wh7-Pr-zag"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="caption" destination="CjX-kD-Uv5" id="nWa-7K-1uy"/>
+                                            <outlet property="likeLbl" destination="li3-jK-9FI" id="kIA-g3-ga2"/>
+                                            <outlet property="postImg" destination="llb-P9-fG1" id="JUu-JM-cGB"/>
+                                            <outlet property="profileImg" destination="kYk-2E-D5Y" id="ZNp-Oy-mpB"/>
+                                            <outlet property="usernameLbl" destination="wcA-MR-5aC" id="BQm-eQ-gh4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="MdW-51-TJp" firstAttribute="top" secondItem="ni7-AU-RDE" secondAttribute="bottom" constant="17" id="83b-Fu-RYY"/>
+                            <constraint firstItem="MdW-51-TJp" firstAttribute="top" secondItem="ni7-AU-RDE" secondAttribute="bottom" constant="8" id="83b-Fu-RYY"/>
                             <constraint firstItem="ni7-AU-RDE" firstAttribute="leading" secondItem="gLJ-jK-L4M" secondAttribute="leadingMargin" id="JYr-zY-3J7"/>
                             <constraint firstAttribute="trailing" secondItem="8tv-aU-i6H" secondAttribute="trailing" id="Lhv-Ta-HOM"/>
                             <constraint firstItem="gxx-es-pWK" firstAttribute="top" secondItem="MdW-51-TJp" secondAttribute="bottom" id="XqK-JJ-Phy"/>
@@ -294,6 +301,9 @@
                             <constraint firstItem="MdW-51-TJp" firstAttribute="leading" secondItem="gLJ-jK-L4M" secondAttribute="leading" id="rXz-Nm-Dcm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="MdW-51-TJp" id="fYc-4Z-qby"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjo-6u-8I8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

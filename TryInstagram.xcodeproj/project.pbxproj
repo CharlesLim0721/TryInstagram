@@ -19,8 +19,10 @@
 		565FAB9D1E70407C00BD678F /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB9C1E70407C00BD678F /* RoundBtn.swift */; };
 		565FAB9F1E70420000BD678F /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FAB9E1E70420000BD678F /* FancyField.swift */; };
 		565FABA11E70434000BD678F /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565FABA01E70434000BD678F /* FancyBtn.swift */; };
+		569EF1D71E726BB7007DACB0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569EF1D61E726BB7007DACB0 /* DataService.swift */; };
 		56ECE1B11E712C7E007BF0B2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ECE1B01E712C7E007BF0B2 /* FeedVC.swift */; };
 		56ECE1B41E716042007BF0B2 /* CicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ECE1B31E716042007BF0B2 /* CicleView.swift */; };
+		56ECE1B61E71683A007BF0B2 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56ECE1B51E71683A007BF0B2 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +40,11 @@
 		565FAB9C1E70407C00BD678F /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		565FAB9E1E70420000BD678F /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		565FABA01E70434000BD678F /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		569EF1D61E726BB7007DACB0 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		56ECE1B01E712C7E007BF0B2 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		56ECE1B21E713013007BF0B2 /* TryInstagram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TryInstagram.entitlements; sourceTree = "<group>"; };
 		56ECE1B31E716042007BF0B2 /* CicleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CicleView.swift; sourceTree = "<group>"; };
+		56ECE1B51E71683A007BF0B2 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		5F6836EA4235AC3C8916F23D /* Pods-TryInstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryInstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-TryInstagram/Pods-TryInstagram.release.xcconfig"; sourceTree = "<group>"; };
 		9B0B809035527AC2247543E9 /* Pods_TryInstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TryInstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +82,7 @@
 		565FAB7F1E70087600BD678F /* TryInstagram */ = {
 			isa = PBXGroup;
 			children = (
+				569EF1D51E726B9D007DACB0 /* Services */,
 				56ECE1B21E713013007BF0B2 /* TryInstagram.entitlements */,
 				565FAB991E70176600BD678F /* Util */,
 				565FAB941E700A2600BD678F /* Model */,
@@ -108,6 +113,7 @@
 				565FAB9E1E70420000BD678F /* FancyField.swift */,
 				565FABA01E70434000BD678F /* FancyBtn.swift */,
 				56ECE1B31E716042007BF0B2 /* CicleView.swift */,
+				56ECE1B51E71683A007BF0B2 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -127,6 +133,14 @@
 				565FAB9A1E70177A00BD678F /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		569EF1D51E726B9D007DACB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				569EF1D61E726BB7007DACB0 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		77CD70A68499C873B30060DA /* Frameworks */ = {
@@ -281,10 +295,12 @@
 				565FAB9D1E70407C00BD678F /* RoundBtn.swift in Sources */,
 				565FAB811E70087600BD678F /* AppDelegate.swift in Sources */,
 				56ECE1B11E712C7E007BF0B2 /* FeedVC.swift in Sources */,
+				569EF1D71E726BB7007DACB0 /* DataService.swift in Sources */,
 				565FAB981E7016DE00BD678F /* FancyView.swift in Sources */,
 				565FAB9B1E70177A00BD678F /* Constants.swift in Sources */,
 				565FABA11E70434000BD678F /* FancyBtn.swift in Sources */,
 				56ECE1B41E716042007BF0B2 /* CicleView.swift in Sources */,
+				56ECE1B61E71683A007BF0B2 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
