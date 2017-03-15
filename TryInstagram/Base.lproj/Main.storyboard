@@ -166,12 +166,16 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ni7-AU-RDE" customClass="FancyView" customModule="TryInstagram" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="LTU-9y-ZVZ" customClass="CicleView" customModule="TryInstagram" customModuleProvider="target">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="LTU-9y-ZVZ" customClass="CicleView" customModule="TryInstagram" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="53" id="GBa-H1-SLO"/>
                                             <constraint firstAttribute="height" constant="49" id="h0z-Uc-Zb7"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ALu-zh-Px0" appends="YES" id="bKv-KR-nA9"/>
+                                        </connections>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wFr-O3-VZf" customClass="FancyField" customModule="TryInstagram" customModuleProvider="target">
                                         <nil key="textColor"/>
@@ -188,6 +192,7 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99195677042007446" green="0.99622899293899536" blue="0.99192315340042114" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="8rl-qB-kTs" firstAttribute="leading" secondItem="wFr-O3-VZf" secondAttribute="trailing" constant="8" id="7m1-1M-6h2"/>
                                     <constraint firstAttribute="bottom" secondItem="LTU-9y-ZVZ" secondAttribute="bottom" constant="8" id="GfX-ER-NSs"/>
@@ -302,10 +307,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="LTU-9y-ZVZ" id="ZMh-MM-43V"/>
                         <outlet property="tableView" destination="MdW-51-TJp" id="fYc-4Z-qby"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjo-6u-8I8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ALu-zh-Px0">
+                    <connections>
+                        <action selector="addImageTapped:" destination="Wdo-of-GJw" id="C8T-Cv-53Y"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="813.60000000000002" y="68.815592203898049"/>
         </scene>
